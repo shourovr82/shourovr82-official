@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AllContexts from './Contexts/AllContexts';
+import { Toaster } from 'react-hot-toast';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AllContexts>
+      <Toaster />
       <App />
     </AllContexts>
   </React.StrictMode>

@@ -18,7 +18,7 @@ const Hero = () => {
         55 30, 65 10, 75 30, 80 20 , 95 20 "
               style={{ fill: 'none', stroke: 'red', strokeWidth: 5 }} />
           </svg>
-          <div className='z-10 w-full text-white mt-10 ml-2 mx-auto'>
+          <div className=' w-full text-white mt-10 ml-2 mx-auto'>
             <h2 className='text-6xl  font-serif font-semibold'><span className='text-end'>“DO WHAT YOU LOVE </span><br />
               LOVE WHAT YOU DO”</h2>
           </div>

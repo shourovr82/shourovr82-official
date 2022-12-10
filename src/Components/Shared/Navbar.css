@@ -64,3 +64,8 @@ nav li:nth-of-type(5) {
   margin: 8px 0;
   transition: 0.4s;
 }
+
+.textarea-about {
+  border-bottom: 1px solid #c602a891;
+  border-radius: 0;
+}
