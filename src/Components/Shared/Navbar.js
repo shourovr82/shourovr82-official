@@ -21,9 +21,9 @@ const Navbar = () => {
 
 
   return (
-    <nav class={`${backgroundnav ? 'bg-[#0c0c0c] md:bg-[#0504048c] ' : 'bg-[#0c0c0c] '} w-full  z-10 shadow fixed`} >
+    <nav class={`${backgroundnav ? 'bg-[#0a192f] md:bg-[#0a192f] ' : 'bg-[#0a192f] '} w-full z-50 shadow fixed`} >
       <div class="container px-6 py-3  mx-auto">
-        <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="lg:flex lg:items-center  lg:justify-between">
           <div class="flex items-center justify-between">
             <div class="text-xl font-semibold text-gray-700">
               <a class="text-xl font-bold text-[#a8a4a4] transition-colors duration-300 transform   hover:text-gray-300" href="/">SHAFIN</a>
@@ -47,14 +47,14 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div class={`${navOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'} absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out  bg-[#0c0c0c] lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center`}>
-            <ul class="flex flex-col -mx-6 gap-10 lg:flex-row lg:items-center lg:mx-8">
+          <div class={`${navOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full'} absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out  bg-[#0a192f] lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center`}>
+            <ul class="flex flex-col  -mx-6 gap-10 lg:flex-row lg:items-center lg:mx-8">
 
-              <li className='text-2xl  md:text-xl font-semibold uppercase z-10 px-4 md:py-2 w-11/12 py-5 transition-all hover:translate-x-3 text-center hover:text-white text-[#a8a4a4] hover:bg-[#cca79a]'><a onClick={() => setNavOpen(false)} href="#nav-2">About</a></li>
-              <li className='text-2xl md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#cca79a] hover:text-white text-[#a8a4a4]' ><a onClick={() => setNavOpen(false)} href="#skills">skills</a></li>
-              <li className='text-2xl md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#cca79a] hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#projects">Projects</a></li>
-              <li className='text-2xl md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#cca79a] hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#home">Home</a></li>
-              <li className='text-2xl md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#cca79a] hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#contact">Contact</a></li>
+              <li className='text-2xl rounded mx-auto md:text-xl font-semibold uppercase z-10 px-4 md:py-2 w-11/12 py-5 transition-all hover:translate-x-3 text-center hover:text-white text-[#a8a4a4] hover:bg-[#06634d4d]'><a onClick={() => setNavOpen(false)} href="#about">About</a></li>
+              <li className='text-2xl  mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]' ><a onClick={() => setNavOpen(false)} href="#skills">skills</a></li>
+              <li className='text-2xl  mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#projects">Projects</a></li>
+              <li className='text-2xl mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#home">Home</a></li>
+              <li className='text-2xl mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#contact">Contact</a></li>
 
             </ul>
             {/* 

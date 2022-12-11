@@ -6,7 +6,7 @@ import travetor from '../../../Assets/travetor.png'
 const Projects = () => {
   return (
     <div className='w-11/12 mx-auto'>
-      <p className='text-[#0078AA] text-center font-semibold font-mono text-5xl pb-20'>{`<PROJECTS>`}</p>
+      <p className='text-[#ccd6f6] font-semibold font-mono text-2xl pb-10'>{`<PROJECTS>`}</p>
       <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-10'>
         <div className=' shadow-2xl rounded-md shadow-[#010b1644]'>
           <div class="group rounded-md relative block bg-black">
