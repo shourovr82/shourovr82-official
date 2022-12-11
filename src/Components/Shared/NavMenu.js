@@ -6,12 +6,12 @@ const NavMenu = () => {
   const { setNavOpen, navOpen } = useContext(EveryContexts)
   return (
     <div className='bg-black'>
-      <>  <div className='menu-title z-10'>
+      <>  <div className='menu-title pt-3 z-10'>
         <Link to='/'>
           <h2 className='text-[#cca79a] text-3xl font-extrabold'>SI</h2>
         </Link>
       </div>
-        <div className="menu-bars  px-5 py-2 text-white text-3xl" >
+        <div className="menu-bars  md:px-5 md:py-2 text-white text-3xl" >
 
           <div className='rounded'
           >
