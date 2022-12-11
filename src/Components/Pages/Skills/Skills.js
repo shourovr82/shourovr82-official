@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <div className='w-10/12 mx-auto my-10'>
+    <div className='w-10/12 mx-auto my-10' id='skills'>
       <p className='text-[#ccd6f6] font-semibold font-mono text-2xl pb-2'>{`<MY SKILLS>`}</p>
       <h1 className='text-center text-[#717c99]'>Here are a few technologies I’ve been working with recently:</h1>
 
@@ -18,7 +18,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className='text-center'> <div className="radial-progress text-[#ccd6f6]" style={{ "--value": "88", "--size": "12rem", "--thickness": "2rem" }}>
+        <div className='text-center'> <div className="radial-progress text-[#ccd6f6]" style={{ "--value": "65", "--size": "12rem", "--thickness": "2rem" }}>
           <p className='text-center text-[#717c99]'>
             NODE JS  <br /> <span>
               65%
@@ -27,7 +27,7 @@ const Skills = () => {
         </div></div>
 
         <div className='text-center'>
-          <div className="radial-progress text-[#ccd6f6]" style={{ "--value": "88", "--size": "12rem", "--thickness": "2rem" }}>
+          <div className="radial-progress text-[#ccd6f6]" style={{ "--value": "75", "--size": "12rem", "--thickness": "2rem" }}>
             <p className='text-center text-[#717c99]'>
               MONGODB <br /> <span>
                 70%

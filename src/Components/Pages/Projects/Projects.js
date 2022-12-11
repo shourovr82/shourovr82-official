@@ -14,7 +14,7 @@ const Projects = () => {
 
 
   return (
-    <div className='w-11/12 mx-auto'>
+    <div className='w-11/12 mx-auto' id='projects'>
       <p className='text-[#ccd6f6] font-semibold font-mono text-2xl pb-10'>{`<PROJECTS>`}</p>
       <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-20'>
 

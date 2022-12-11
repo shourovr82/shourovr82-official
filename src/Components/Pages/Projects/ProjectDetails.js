@@ -48,10 +48,10 @@ const ProjectDetails = () => {
             <div className='flex md:flex-row flex-col  mt-4 gap-4 w-full justify-center items-center'>
               <a href={siteLink} target='_blank' rel="noreferrer" className=' font-semibold  border border-[#64ffda] gap-3 flex justify-center items-center px-4 md:py-2  py-5 w-full  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#64ffda]'>Live Site <RxOpenInNewWindow />
               </a>
-              <a href={siteLink} target='_blank' rel="noreferrer" className=' font-semibold  border border-[#64ffda] gap-3 flex justify-center items-center px-4 md:py-2  py-5 w-full  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#64ffda]'>Client Repo <FaCode />
+              <a href={clientrepo} target='_blank' rel="noreferrer" className=' font-semibold  border border-[#64ffda] gap-3 flex justify-center items-center px-4 md:py-2  py-5 w-full  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#64ffda]'>Client Repo <FaCode />
               </a>
 
-              <a href={siteLink} target='_blank' rel="noreferrer" className=' font-semibold  border border-[#64ffda] gap-3 flex justify-center items-center px-4 md:py-2  py-5 w-full  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#64ffda]'>Server Repo <FaServer /></a>
+              <a href={serverrepo} target='_blank' rel="noreferrer" className=' font-semibold  border border-[#64ffda] gap-3 flex justify-center items-center px-4 md:py-2  py-5 w-full  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#64ffda]'>Server Repo <FaServer /></a>
 
             </div>
 

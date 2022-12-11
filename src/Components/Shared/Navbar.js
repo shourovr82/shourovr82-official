@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EveryContexts } from '../../Contexts/AllContexts';
 import './Navbar.css'
-import NavMenu from './NavMenu';
 
 const Navbar = () => {
   const { navOpen, setNavOpen } = useContext(EveryContexts)
@@ -32,7 +31,7 @@ const Navbar = () => {
             <div className="flex lg:hidden">
               <button
                 onClick={() => setNavOpen(prev => !prev)}
-                type="button" className="text-gray-500 text-gray-200 hover:text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-600 focus:text-gray-400" aria-label="toggle menu">
+                type="button" className=" text-gray-200 hover:text-gray-400 focus:outline-none  focus:text-gray-400" aria-label="toggle menu">
                 {!navOpen && <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
                 </svg>}
@@ -48,13 +47,25 @@ const Navbar = () => {
           </div>
 
           <div className={`${navOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full'} absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out  bg-[#0a192f] lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center`}>
-            <ul className="flex flex-col  -mx-6 gap-10 lg:flex-row lg:items-center lg:mx-8">
+            <ul className="flex flex-col  -mx-6 gap-8 lg:flex-row lg:items-center lg:mx-8">
 
-              <li className='text-2xl rounded mx-auto md:text-xl font-semibold uppercase z-10 px-4 md:py-2 w-11/12 py-5 transition-all hover:translate-x-3 text-center hover:text-white text-[#a8a4a4] hover:bg-[#06634d4d]'><a onClick={() => setNavOpen(false)} href="/#about">About</a></li>
-              <li className='text-2xl  mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]' ><a onClick={() => setNavOpen(false)} href="#skills">skills</a></li>
-              <li className='text-2xl  mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#projects">Projects</a></li>
-              <li className='text-2xl mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#home">Home</a></li>
-              <li className='text-2xl mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]'><a onClick={() => setNavOpen(false)} href="#contact">Contact</a></li>
+
+              <li ><Link className='text-2xl block mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]' onClick={() => setNavOpen(false)} to="/">Home</Link></li>
+              <li ><Link className='text-2xl block mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]' onClick={() => setNavOpen(false)} to="/blogs">Blogs</Link></li>
+
+
+              <li ><a className='text-2xl block rounded mx-auto md:text-xl font-semibold uppercase z-10 px-4 md:py-2 w-11/12 py-5 transition-all hover:translate-x-3 text-center hover:text-white text-[#a8a4a4] hover:bg-[#06634d4d]' onClick={() => setNavOpen(false)} href="/#about">About</a></li>
+
+
+
+
+              <li ><a className='text-2xl   mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4] block' onClick={() => setNavOpen(false)} href="/#skills">skills</a></li>
+
+              <li ><a className='text-2xl  mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4] block' onClick={() => setNavOpen(false)} href="/#projects">Projects</a></li>
+
+
+
+              <li ><a className='text-2xl mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5 block transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]' onClick={() => setNavOpen(false)} href="/#contact">Contact</a></li>
 
             </ul>
 

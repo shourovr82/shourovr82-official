@@ -19,20 +19,20 @@ const Contact = () => {
 
 
   return (
-    <div className='mt-10 mx-2 '>
-      <h2 className='text-[#f7e4d8] font-bold text-3xl text-center'>CONTACT</h2>
-      <h2 className=' text-center text-[#f7e4d8] text-2xl'>Feel free to send an e-mail on <a className='underline-offset-8 underline ' href="mailto:shafinur512@gmail.com">shafinur512@gmail.com</a></h2>
+    <div className='mt-10 mx-2 ' id='contact'>
+      <p className='text-[#ccd6f6] text-center font-semibold font-mono text-2xl pb-2'>{`<GET IN TOUCH>`}</p>
+      <h2 className=' text-center text-[#ccd6f6] text-2xl'>Feel free to send an e-mail on <a className='underline-offset-8 underline ' href="mailto:shafinur512@gmail.com">shafinur512@gmail.com</a></h2>
       <div className=''>
-        <p className='text-center text-xl py-5 font-thin text-[#f7e4d8]'>Alternatively, you can also drop-in a mail here!</p>
+        <p className='text-center text-xl py-5 font-thin text-[#8892b0]'>Alternatively, you can also drop-in a mail here!</p>
         <div className='flex  justify-center'>
 
           <form
             onSubmit={sendEmail}
             className='flex flex-col w-full md:w-3/5 p-10  justify-center md:ml-16 gap-10 '>
-            <input type="text" required className='py-4 text-[#cca79a] pl-3 placeholder:text-xl  text-xl  bg-transparent border-b border-[#c602a891]' name="name" id="name" placeholder='Please Enter Your Name' />
-            <input type="email" required className='py-2 text-[#cca79a] text-xl pl-3 placeholder:text-xl  bg-transparent border-b  border-[#c602a891] ' name="email" id="" placeholder='Please Enter Your Email' />
-            <textarea className="textarea required py-10 text-xl text-[#cca79a] pl-3 bg-transparent placeholder:text-2xl textarea-[#c602a891] mt-2 rounded-0 textarea-about" name='message' placeholder="Message"></textarea>
-            <button className='border border-[#c602a891] w-1/2 py-2 rounded text-xl text-[#cca79a] hover:bg-[#0078aa] hover:text-white hover:border-[#11040400]' type="submit">Send Mail</button>
+            <input type="text" required className='py-4 text-[#cca79a] pl-3 placeholder:text-xl  text-xl  bg-transparent border-b border-[#64ffda]' name="name" id="name" placeholder='Please Enter Your Name' />
+            <input type="email" required className='py-2 text-[#cca79a] text-xl pl-3 placeholder:text-xl  bg-transparent border-b  border-[#64ffda] ' name="email" id="" placeholder='Please Enter Your Email' />
+            <textarea className="textarea required py-10 text-xl text-[#cca79a] pl-3 bg-transparent  placeholder:text-2xl  mt-2 rounded-0 textarea-about focus:border-[#64ffda]" name='message' placeholder="Message"></textarea>
+            <button className='border border-[#64ffda] w-1/2 py-2 rounded text-xl text-[#cca79a] hover:bg-[#0078aa] hover:text-white hover:border-[#11040400]' type="submit">Send Mail</button>
           </form>
         </div>
 

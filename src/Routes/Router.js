@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blogs from "../Components/Pages/Blogs/Blogs";
 import Home from "../Components/Pages/Home/Home";
 import ProjectDetails from "../Components/Pages/Projects/ProjectDetails";
 import NavMenu from "../Components/Shared/NavMenu";
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
         path: '/project/:id',
         loader: ({ params }) => fetch(`https://shourovr82-server.vercel.app/project/${params.id}`),
         element: <ProjectDetails></ProjectDetails>
+      },
+      {
+        path: '/blogs',
+        element: <Blogs></Blogs>
       }
     ]
   }
