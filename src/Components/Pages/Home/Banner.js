@@ -17,7 +17,8 @@ const Banner = () => {
 
         </div>
         <div className='w-full md:w-2/5 mt-3'>
-          <p className='text-[#8892b0]'>I’m a Frontend Developer specializing in building (and occasionally designing) exceptional digital Web Apps. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p>
+          <p className='text-[#8892b0]'>I’m a Frontend Developer specializing in building (and occasionally designing) exceptional digital Web Apps. Eager to tackle Web Development/Design Challenges
+            to achieve lasting impacts on users with Backend Experience.</p>
           <a href='https://drive.google.com/file/d/1PBGyotEFE3UZRWv7wS-7P313m3bwIwiV/view?usp=sharing'
             className='border rounded hover:bg-[#06634d4d] border-[#64ffdb8f] items-center gap-5 justify-center text-[#64ffda] flex md:w-2/4 p-2 mt-3 '
             target="_blank" rel="noreferrer">

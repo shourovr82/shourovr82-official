@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import phut from '../../../Assets/phut.png'
-import swift from '../../../Assets/swift-c.png'
-import travetor from '../../../Assets/travetor.png'
 
 const Projects = () => {
   const [projectsData, setProjectsData] = useState([]);
 
   useEffect(() => {
-    fetch('projects.json')
+    fetch('https://shourovr82-server.vercel.app/projects')
       .then(res => res.json())
       .then(data => {
         setProjectsData(data)
@@ -22,8 +19,8 @@ const Projects = () => {
       <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-20'>
 
 
-        {projectsData && projectsData.map(project =>
-          <div className=' shadow-2xl rounded-md shadow-[#010b1644]'>
+        {projectsData && projectsData.map((project, index) =>
+          <div className=' shadow-2xl rounded-md shadow-[#010b1644]' key={index}>
             <div className="group rounded-md relative block bg-black">
               <img
                 alt="Developer"

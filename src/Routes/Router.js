@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/project/:id',
-        loader: ({ params }) => fetch(`projects.json/${params.id}`),
+        loader: ({ params }) => fetch(`https://shourovr82-server.vercel.app/project/${params.id}`),
         element: <ProjectDetails></ProjectDetails>
       }
     ]
