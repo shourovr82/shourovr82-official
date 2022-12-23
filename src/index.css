@@ -39,12 +39,16 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #46b2a1;
+  background: #4162f5;
   border-radius: 10px;
 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #05927d;
+  background: #010d41;
+}
+
+html {
+  scroll-behavior: smooth;
 }

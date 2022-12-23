@@ -18,9 +18,12 @@ const Navbar = () => {
   }
   window.addEventListener('scroll', changeBackground);
 
+  const backhome = () => {
+    document.body.scrollIntoView();
+  }
 
   return (
-    <nav className={`${backgroundnav ? 'bg-[#0a192f] md:bg-[#0a192f] ' : 'bg-[#0a192f] '} w-full z-50 shadow fixed`} >
+    <nav className={`${backgroundnav ? 'bg-[#0a192f] md:bg-[#0a192f] ' : ''} w-full z-50 shadow fixed`} >
       <div className="container px-6 py-3  mx-auto">
         <div className="lg:flex lg:items-center  lg:justify-between">
           <div className="flex items-center justify-between">
@@ -50,8 +53,11 @@ const Navbar = () => {
             <ul className="flex flex-col  -mx-6 gap-8 lg:flex-row lg:items-center lg:mx-8">
 
 
-              <li ><Link className='text-2xl block mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]' onClick={() => setNavOpen(false)} to="/">Home</Link></li>
-              <li ><Link className='text-2xl block mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]' onClick={() => setNavOpen(false)} to="/blogs">Blogs</Link></li>
+              <li ><Link className='text-2xl block mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]' onClick={() => {
+                setNavOpen(false)
+                backhome()
+              }} to="/">Home</Link></li>
+
 
 
               <li ><a className='text-2xl block rounded mx-auto md:text-xl font-semibold uppercase z-10 px-4 md:py-2 w-11/12 py-5 transition-all hover:translate-x-3 text-center hover:text-white text-[#a8a4a4] hover:bg-[#06634d4d]' onClick={() => setNavOpen(false)} href="/#about">About</a></li>
@@ -61,9 +67,9 @@ const Navbar = () => {
 
               <li ><a className='text-2xl   mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4] block' onClick={() => setNavOpen(false)} href="/#skills">skills</a></li>
 
-              <li ><a className='text-2xl  mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4] block' onClick={() => setNavOpen(false)} href="/#projects">Projects</a></li>
+              <li><a className='text-2xl  mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5  transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4] block' onClick={() => setNavOpen(false)} href="/#projects">Projects</a></li>
 
-
+              <li ><Link className='text-2xl block mx-auto md:text-xl font-semibold uppercase px-4 md:py-2 w-11/12 py-5 rounded transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] hover:text-white text-[#a8a4a4]' onClick={() => setNavOpen(false)} to="/blogs">Blogs</Link></li>
 
               <li ><a className='text-2xl mx-auto md:text-xl font-semibold uppercase  px-4 md:py-2 w-11/12 py-5 block transition-all hover:translate-x-3 text-center hover:bg-[#06634d4d] rounded hover:text-white text-[#a8a4a4]' onClick={() => setNavOpen(false)} href="/#contact">Contact</a></li>
 

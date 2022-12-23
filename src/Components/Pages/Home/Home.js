@@ -5,16 +5,18 @@ import Hero from '../Hero/Hero';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
 import Banner from './Banner';
+import './home.css'
 
 const Home = () => {
   return (
-    <div className='bg-[#0a192f] '>
+    <div className='home-background overflow-hidden' >
       <Banner></Banner>
-
       <Hero></Hero>
-      <Projects></Projects>
-      <About></About>
+
       <Skills></Skills>
+      <Projects></Projects>
+
+      <About></About>
       <Contact></Contact>
 
     </div>
